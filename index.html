@@ -6,22 +6,38 @@
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="iconfont/1/iconfont.css">
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery.fullPage.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
 <ul id="menu">
-    <li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
-    <li data-menuanchor="page2"><a href="#page2">自我介绍</a></li>
-    <li data-menuanchor="page3"><a href="#page3">技能</a></li>
-    <li data-menuanchor="page4"><a href="#page4">项目</a></li>
-    <li data-menuanchor="page5"><a href="#page5">联系我</a></li>
+    <li data-menuanchor="page1" class="active"><a href="#page1">  <i class="iconfont icon-shouye"></i></a>
+      
+    </li>
+    <li data-menuanchor="page2"><a href="#page2">
+         <i class="iconfont icon-ziwojieshao"></i>
+    </a></li>
+    <li data-menuanchor="page3"><a href="#page3">
+            <i class="iconfont icon-cha"></i>
+    </a></li>
+    <li data-menuanchor="page4"><a href="#page4">
+            <i class="iconfont icon-gerenzhongxin-chenggonganli"></i>
+    </a></li>
+    <li data-menuanchor="page5"><a href="#page5">
+            <i class="iconfont icon-lianxiwomen"></i>
+    </a></li>
 </ul>
+    <div class="background-page">
+        <video autoplay loop poster="img/video-1.mp4" >
+            <source src="img/video-1.mp4" type="video/mp4">
+        </video>
+    </div>
     <main>
 <!--第一页-->
         <section class="section">
-            <div class="shade1"></div>
+            
             <div class="bg1"></div>
             <div class="bg11 ">
                 <h3>我的主页</h3>
@@ -41,7 +57,7 @@
         </section>
  <!--第二页-->
         <section class="section">
-            <div class="shade"></div>
+     
             <div class="bg2"></div>
             <div class="bg21">
                <img src="img/bg1-5.png" alt="">
@@ -56,11 +72,11 @@
 
 <!--第三页-->
         <section class="section">
-            <div class="shade"></div>
+            
             <div class="bg3"></div>
             <div class="bg31">
                 <div class="title">
-                    <span style="color: #8AC643">HTML</span>+<span style="color: #0D0352">CSS</span>+<span style="color: red">JS</span>+<span style="color: #C1209B">PHP</span>
+                    <span >HTML</span>+<span >CSS</span>+<span >JS</span>+<span >PHP</span>
                 </div>
             </div>
             <ul class="bg32">
@@ -77,7 +93,7 @@
                         <i class="iconfont icon-wangye"></i>
                     </div>
                     <p>
-                        层叠样式表(Cascading Style Sheets)是一种用来表现HTML(标准通用标记语言的一个应用)或XML等文件样式的计算机语言。
+                        层叠样式表(Cascading Style Sheets)是一种用来表现HTML或XML等文件样式的计算机语言。
                     </p>
                 </li>
                 <li class="bg32-3">
@@ -102,83 +118,86 @@
         </section>
 <!--第四页-->
         <section class="section">
-            <div class="shade"></div>
+            
             <div class="bg4"></div>
+            <div class="bg4-2">
+                CLIENTS AND REFERENCES
+            </div>
             <ul class="bg41">
                 <li class="bg41-1">
                     <div class=" case case-1">
-                        <img src="img/bg4 (1).jpg" alt="">
+                        <img src="img/logo (1).png" alt="">
                     </div>
                 </li>
                 <li class="bg41-2">
                     <div class=" case case-2">
-                        <img src="img/bg4 (2).jpg" alt="">
+                        <img src="img/logo (2).png" alt="">
                     </div>
                 </li>
                 <li class="bg41-3">
                     <div class=" case case-3">
-                         <img src="img/bg4 (3).jpg" alt="">
+                         <img src="img/logo (3).png" alt="">
                     </div>
                 </li>
                 <li class="bg41-4">
                     <div class=" case case-4">
-                         <img src="img/bg4 (4).jpg" alt="">
+                         <img src="img/logo (4).png" alt="">
                     </div>
                 </li>
                 <li class="bg41-5">
                     <div class=" case case-5">
-                         <img src="img/bg4 (5).jpg" alt="">
+                         <img src="img/logo (5).png" alt="">
                     </div>
                 </li>
                 <li class="bg41-6">
                     <div class=" case case-6">
-                         <img src="img/bg4 (6).jpg" alt="">
+                         <img src="img/logo (6).png" alt="">
+                    </div>
+                </li>
+                 <li class="bg41-7">
+                    <div class=" case case-7">
+                         <img src="img/logo (6).png" alt="">
+                    </div>
+                </li>
+                 <li class="bg41-8">
+                    <div class=" case case-8">
+                         <img src="img/logo (6).png" alt="">
                     </div>
                 </li>
             </ul>
         </section>
 <!--第五页-->
         <section class="section">
-            <div class="shade"></div>
-            <div class="bg5"></div>
+            
+            <div class="bg5">
+                <div class="bg5-3">
+                   CONTACT ME
+                </div>
+                <div class="bg5-1">
+                   
+                </div>
+                <div class="bg5-2">
+                    <input type="text" placeholder="name">
+                    <input type="text" placeholder="email">
+                    <input type="text" placeholder="photo">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button>提交</button>
 
-            <div class="bg5-1">
-               
-            </div>
-            <div class="bg5-2">
-                <input type="text" placeholder="name">
-                <input type="text" placeholder="email">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button>提交</button>
-
-            </div>
-            <div class="bg5-3">
-                    <div class="content">
-                        <div class="icon-item">
-                            <span>
-                                <i class="iconfont icon-2"></i>
-                            </span>
-                            <p>
-                                山西省太原市平阳路学府街口凯通大厦二层
-                            </p>
-                        </div>
-                        <div class="icon-item">
-                            <span>
-                                <i class="iconfont  icon-dianhua"></i>
-                            </span>
-                            <p>
-                                +18834078749 <br>+15234668323
-                            </p>
-                        </div>
-                        <div class="icon-item">
-                            <span>
-                                <i class="iconfont icon-youjian"></i>
-                            </span>
-                            <p>
-                               815427582@qq.com
-                            </p>
-                        </div>                        
-                    </div>
+                </div>
+                <ul class="bg5-4">
+                    <li>
+                     <span><i class="iconfont icon-2"></i></span>
+                        15234668323
+                    </li>
+                    <li>
+                      <span><i class="iconfont  icon-dianhua"></i></span>
+                        15234668323
+                    </li>
+                    <li>
+                     <span><i class="iconfont icon-youjian"></i></span>
+                        815427582@qq.com
+                    </li>
+                </ul>
             </div>
 
 

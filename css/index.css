@@ -3,40 +3,37 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
-    z-index: 5;
+    
 }
 .active{
     z-index: 10;
 }
 #menu{
-    width: 600px;
-    height: 40px;
-  /*   background: red; */
-    display: flex;
-    justify-content: space-between;
+    width: 60px;
+    height: auto;
     position: fixed;
     top: 0;
-    left: 50%;
-    margin-left: -300px;
+    right: 50px;
     z-index: 10;
 
 }
 #menu li a{
     display: block;
-    width: 100px;
-    height: 30px;
-    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
     border-radius: 5px;
-    background: #fff;
-    line-height: 30px;
+    color: #fff;
+  
+    line-height: 60px;
     text-align: center;
-    color: #000;
-    font-size: 16px;
+    opacity: 0.8;
 
 }
 #menu .active a{
-   background: #001DD2; 
-   color: #fff;
+  transform: scale(2);
+  opacity: 1;
+  
 }
 .section{
     position: relative;
@@ -54,27 +51,41 @@
 .shade1{
     background: rgba(0,0,0,0.8);
 }
-
+.background-page{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+   /*  z-index: 5; */
+    position: fixed;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+.background-page video{
+    width: 100%;
+    bottom: 0;
+    top: 0;
+}
 
 /*第一页*/
 .section:first-child .bg1{
     width: 100%;
     height: 100%;
-    background:url("../img/bj (1).jpg") no-repeat top center;
-
+    
 }
 .section:first-child .bg11{
     width:400px;
     height: 200px;
-    /* background: red; */
-    /* display: flex;
-    justify-content: space-between; */
+
     position: absolute;
     top: 100px;
     left:50%;
     margin-left: -200px;
     transition: all 1s;
-    /*transform: translateY(-30px);*/
+   
 }
  .active .bg11{
 
@@ -135,7 +146,7 @@
 .section:first-child .bg12{
     width: 1200px;
     height: 200px;
-    background: url('../img/bg13.png') no-repeat center center;
+    /* background: url('../img/bg13.png') no-repeat center center; */
     position: absolute;
     bottom: 20px;
     left:50%;
@@ -219,14 +230,14 @@
 .section:nth-child(2) .bg2{
     width: 100%;
     height: 100%;
-    background:url("../img/bj (6).jpg") no-repeat top center;
+    /* background:url("../img/bj (6).jpg") no-repeat top center; */
     background-size: 100% 100%;
 
 }
 .section:nth-child(2) .bg21{
     width: 400px;
     height: 400px;
-  /*  background: url('../img/bg1-5.png') no-repeat top center; */
+    background: url('../img/bg1-5.png') no-repeat top center;
     border-radius: 50%;
     position: absolute;
     top:50%;
@@ -294,7 +305,6 @@
 .section:nth-child(3) .bg3{
     width: 100%;
     height: 100%;
-    background:url("../img/bj (3).jpg") no-repeat top center;
     background-size: 100% 100%;
 
 }
@@ -334,12 +344,15 @@
     display: flex;
     justify-content: space-between; 
     transition: 1s; 
+    opacity: 1;
 }
 .section:nth-child(3) .bg32 li{
     width: 200px;
     height: 100%;
     background: #fff;
    /*  box-sizing: border-box; */
+   opacity: 0.7;
+
     padding: 10px;
     box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.5);
     
@@ -348,7 +361,7 @@
     transform: translateY(0);
 }
 .bg32{
-    transform: translateY(-200px);
+    transform: translateX(-200px);
 }
 .active .bg32 li{
     
@@ -356,7 +369,7 @@
     opacity: 1;
 }
 .active .bg32 .bg32-1{
-    transition: all 1s;
+    transition: all 0.5s;
 }
  .bg32-1{
     transform: translateX(-500px);
@@ -366,21 +379,21 @@
     transition: all 1.5s;
 }
  .bg32-2{
-    transform: translateY(500px);
+    transform: translateX(-500px);
     opacity: 0;
  }
  .active .bg32 .bg32-3{
-    transition: all 2s;
+    transition: all 2.5s;
 }
  .bg32-3{
     transform: translateX(500px);
     opacity: 0;
  }
 .active .bg32 .bg32-4{
-    transition: all 2.5s;
+    transition: all 3.5s;
 }
  .bg32-4{
-    transform: translateY(500px);
+    transform: translateX(500px);
     opacity: 0;
  }
 .tubiao{
@@ -405,7 +418,6 @@
 .section:nth-child(4) .bg4{
     width: 100%;
     height: 100%;
-    background:url("../img/bj (4).jpg") no-repeat top center;
     background-size: 100% 100%;
 
 }
@@ -414,37 +426,36 @@
     height: 400px;
     /* background: red; */
     position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    left: 50%;
+    margin-left: -600px;
+    bottom: 60px;
 
 }
 .bg41 li{
     float: left;
-    width:400px;
+    width:300px;
     height: 200px;
     box-sizing: border-box;
+    opacity: 0.8;
     
    
 }
-.bg41-1,.bg41-2{
+.bg41-1,.bg41-2,.bg41-3{
     border-right: 1px dotted #fff;
     border-bottom: 1px dotted #fff;
 }
-.bg41-3{
+.bg41-4{
     border-bottom: 1px dotted #fff;
 }
-.bg41-4,.bg41-5{
+.bg41-5,.bg41-6,.bg41-7{
     border-right: 1px dotted #fff;
 }
 
 .bg41 li .case{
-    width: 200px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     /* background: blue; */
-    margin: 25px auto;
+    margin: 50px auto;
     transition: all 1s;
   
 }
@@ -452,56 +463,56 @@
     opacity: 1;
     transform: translate(0, 0);
 }
-.case-1{
-      opacity: 0;
-    transform: translate(-600px, -400px);
+.case-1,.case-4,.case-6,.case-7{
+    opacity: 0;
+    transform: translateY(600px);
 }
-.case-2{
-       opacity: 0;
-    transform: translate(0, -400px);
-}
-.case-3{
-       opacity: 0;
-    transform: translate(600px, -400px);
-}
-.case-4{
-       opacity: 0;
-    transform: translate(-600px, 400px);
-}
-.case-5{
-       opacity: 0;
-    transform: translate(0px, 400px);
-}
-.case-6{
-       opacity: 0;
-    transform: translate(600px, 400px);
-}
-.case img{
-    width: 100%;
-    height: 100%
+.case-2,.case-3,.case-5,.case-8{
+    opacity: 0;
+    transform: translateY(-600px);
 }
 
+.case img{
+    width: 100%;
+    height: 100%;
+}
+.case:hover{
+    transform: scale(1.25);
+}
+.bg4-2{
+
+    margin: 0 auto;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -300px;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+
+}
 
 
 
 /*第五页*/
 .section:nth-child(5) .bg5{
-    width: 100%;
+    width: 1200px;
     height: 100%;
-    background:url("../img/bj (5).jpg") no-repeat top center;
+    margin: 0 auto;
+    padding-top: 80px;
+    box-sizing: border-box;
+    /* background:url("../img/bj (5).jpg") no-repeat top center; */
     background-size: 100% 100%;
 
 }
 
-.bg5-1,.bg5-3{
-    width: 300px;
-    height: 500px;
+.bg5-1{
+    width: 500px;
+    height: 400px;
     /* background: blue; */
-
-    position: absolute;
-    top: 50%;
-    margin-top: -250px;
-    
+    float: left;
+    border-radius: 2px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.4);
     transition: all 1s;
     
 }
@@ -510,10 +521,15 @@
     transform: translateX(-600px);
 }
 .bg5-3{
+    margin-bottom: 60px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
     opacity: 0.8;
     border-radius: 10px;
     right: 50px;
-    transform: translateX(600px);
+    transform: translateY(200px);
 }
 .active .bg5-1{
     transform: translateX(0px);
@@ -522,44 +538,50 @@
     transform: translateX(0px);
 }
 .bg5-2{
-    width: 700px;
-    height: 500px;
-    background: #ccc;
+    float: right;
+
+    width: 600px;
+    height: 400px;
+    background: #fff;
     box-sizing: border-box;
     padding: 20px 15px;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     border-radius: 20px;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin:auto;
+    margin-bottom: 60px;
+    
     transition: all 1s;
     transform: scale(0);
 }
 .active .bg5-2{
     transform: scale(1);
 }
-.bg5-2 input,.bg5-2 textarea{
+.bg5-2 input{
+    width: 30%;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     display: block;
-    width: 650px;
-    height: 50px;
-    font-size: 24px;
-    margin-bottom: 15px;
-    padding-left: 5px;
+    float: left;
+    outline: none;
+    font-size: 16px;
     box-sizing: border-box;
-    border-radius: 8px;
-    border: none;
-    outline: none; 
+    padding-left: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+
 }
 .bg5-2 textarea{
-   
+    display: block;
+    width: 94%  ;
+    box-sizing: border-box;
     height: 240px;
     font-size: 16px;
     padding: 5px;
+    outline: none;
     resize:none;
+     border-radius: 6px;
+    border: 1px solid #ccc;
+
 }
 .bg5-2 button{
     width: 100px;
@@ -567,28 +589,33 @@
     font-size: 24px;
     font-family: '楷体';
     border-radius: 8px;
-    background: #FFF;
+    background: #000;
+    color: #fff;
+    margin-top: 10px;
+
     cursor: pointer;
    border: none;
    outline: none;
 }
 
-.content{
+.bg5-4{
     width: 100%;
-    height: 100%;  
-    padding: 0 5px;
-    box-sizing: border-box;  
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
 }
-.icon-item{
-    width: 100%;
-    /* height: 120px; */
-    margin-top:30px; 
-    font-size: 24px;
-    color: #fff;
+.bg5-4 li{
+   width: 25%;
+   height: 100%;
+   text-align: center;
+   line-height: 40px;
+   color: #fff;
+   font-weight: bold;
+
 }
-.icon-item .iconfont{
-    font-size: 24px;
-    color: #fff;
+.bg5-4 li .iconfont{
+    font-size: 30px;
+       font-weight: 500;
 }
 
 
